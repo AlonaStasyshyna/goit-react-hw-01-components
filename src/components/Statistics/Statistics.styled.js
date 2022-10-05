@@ -8,6 +8,8 @@ export const Section = styled.section`
     background: #FFFFFF;
     box-shadow: 0px 1px 4px rgba(126, 147, 255, 0.2);
     border-radius: 6px;
+
+    overflow: hidden;
 `;
 
 export const Title = styled.h2`
@@ -41,7 +43,7 @@ export const ListItem = styled.li`
     padding: 8px 0;
     gap: 8px;
 
-    width: 65px;
+    width: calc(100% / 5);
 `;
 
 export const Label = styled.span`
@@ -49,8 +51,18 @@ export const Label = styled.span`
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: calc(14 / 12);
 
     color: #FFFFFF;
+`;
 
+export const Percentage = styled.span`
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+
+    color: #FFFFFF;
 `;
